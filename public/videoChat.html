@@ -39,7 +39,7 @@
         }
 
         #send-container {
-            height: 6.5%;
+            height: 7%;
             position: fixed;
             bottom: 0;
             width: 20%;
@@ -66,27 +66,6 @@
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">&lt;</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">&gt;</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            . . .
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -119,7 +98,8 @@
                 </a>
             </li>
             <li>
-                <button class="nav-link py-3 border-bottom"
+                <button class="nav-link py-3 border-bottom" title="Chat" data-bs-toggle="tooltip"
+                data-bs-placement="right" style="font-size: small;"
                     style="font-size: small; color: blue; background-color: black; width: 4.5rem;" onclick="toogle()">
                     <img src="Images/chat.png" alt="" width="30" height="24"
                         class="d-inline-block align-text-top">Chat</button>
@@ -130,13 +110,6 @@
                     <img src="Images/man.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Teams
                 </a>
             </li>
-            <li>
-                <a href="#" class="nav-link py-3 border-bottom" title="Files" data-bs-toggle="tooltip"
-                    data-bs-placement="right" style="font-size: small;">
-                    <img src="Images/files.png" alt="" width="30" height="24"
-                        class="d-inline-block align-text-top">Files
-                </a>
-            </li>
         </ul>
     </div>
 
@@ -145,7 +118,7 @@
         <div id="message-container"></div>
     </div>
     <form id="send-container">
-        <input type="text" id="message-input" style="background-color: black; color: white; border-radius: 10px;">
+        <input type="text" id="message-input" style="background-color: black; color: white; border-radius: 10px; height: 100%;">
         <button type="submit" id="send-button"
             style="background-color: black; color: white; border-radius: 10px; width: 20%;">Send</button>
     </form>
