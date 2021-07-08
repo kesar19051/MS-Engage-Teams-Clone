@@ -46,10 +46,12 @@
             margin-left: 80%;
             display: flex;
             float: right;
+            display: none;
         }
 
         #scrollable {
             overflow-y: auto;
+            display: none;
         }
 
         #message-input {
@@ -117,10 +119,10 @@
                 </a>
             </li>
             <li>
-                <a href="chat.html" class="nav-link py-3 border-bottom" title="Chat" data-bs-toggle="tooltip"
-                    data-bs-placement="right" style="font-size: small;">
-                    <img src="Images/chat.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Chat
-                </a>
+                <button class="nav-link py-3 border-bottom"
+                    style="font-size: small; color: blue; background-color: black; width: 4.5rem;" onclick="toogle()">
+                    <img src="Images/chat.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">Chat</button>
             </li>
             <li>
                 <a href="videoChat.html" class="nav-link py-3 border-bottom" title="Teams" data-bs-toggle="tooltip"
@@ -190,6 +192,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        function toogle() {
+            if (document.getElementById("scrollable").style.display == "block") {
+                document.getElementById("scrollable").style.display = "none";
+                document.getElementById("send-container").style.display = "none";
+            }
+            else {
+                document.getElementById("scrollable").style.display = "block";
+                document.getElementById("send-container").style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
