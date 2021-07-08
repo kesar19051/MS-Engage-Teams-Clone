@@ -11,6 +11,35 @@
     .dropdown-toggle::after {
       content: none;
     }
+
+    #content {
+      background-color: rgb(52, 52, 54);
+      width: 75%;
+      float: left;
+      color: white;
+      margin-left: 15%;
+      margin-top: 3%;
+      margin-bottom: 2%;
+      height: 18%;
+      padding: 5%;
+      font-size: x-large;
+      text-align: center;
+      font-style: italic;
+      border-radius: 20px;
+    }
+
+    #aboutChat{
+      background-color: rgb(52, 52, 54);
+      width: 75%;
+      float: left;
+      color: white;
+      margin-left: 15%;
+      padding: 2%;
+      font-size: large;
+      text-align: center;
+      font-style: italic;
+      border-radius: 20px;
+    }
   </style>
 </head>
 
@@ -20,29 +49,11 @@
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <div class="nav-link dropdown-toggle">
               <img src="Images/login.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
               SaffronChat
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -53,9 +64,9 @@
 
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <li class="nav-item">
-        <a href="index.html" class="nav-link py-3 border-bottom" aria-current="page" title="Activity"
+        <a href="index.html" class="nav-link py-3 border-bottom" aria-current="page" title="Welcome"
           data-bs-toggle="tooltip" data-bs-placement="right" style="font-size: small;">
-          <img src="Images/bell.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Activity
+          <img src="Images/bell.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Main
         </a>
       </li>
       <li>
@@ -67,10 +78,13 @@
     </ul>
   </div>
 
-  <div style="background-color: blue; width: 75%; float: left;
-    color: white; margin-left: 4.5rem; margin-right: 250px;">hello \n how areyou Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Nemo iusto amet neque, consequuntur culpa perspiciatis
-    eaque at porro voluptas nihil nesciunt, assumenda odio. Delectus laboriosam rerum sapiente ullam a debitis!</div>
+  <div id="content">
+    Hello! Welcome to SaffronChat!
+  </div>
+
+  <div id="aboutChat">
+    Click on 'Teams' in the sidebar for video call.
+  </div>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="main.js"></script>
