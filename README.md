@@ -35,4 +35,12 @@ I have used:
 
 ## Screenshots
 
-<img src = "Screenshots/MainPage.jpg" width = "350"/>
+<img src = "Screenshots/MainPage.jpg" widht="750"/>
+<img src = "Screenshots/EnterName.jpg" widht="750"/>
+<img src = "Screenshots/UserCanSeeVideo.jpg" widht="750"/>
+<img src = "Screenshots/AnotherParticipant.jpg" widht="750"/>
+<img src = "Screenshots/ChatOpened.jpg" widht="750"/>
+<img src = "Screenshots/OtherEndOfChat.jpg" widht="750"/>
+<img src = "Screenshots/SelectFilter.jpg" widht="750"/>
+<img src = "Screenshots/FilterApplied.jpg" widht="750"/>
+<img src = "Screenshots/OtherEndOfFilter.jpg" widht="750"/>
