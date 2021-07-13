@@ -26,3 +26,9 @@ I have used:
 - Bootstrap for styling
 - Socket.io
 
+## Run the application
+
+- Download the file.
+- Extract it.
+- Run 'npm start' in the development mode.
+- Open http://localhost:3000 to view it in the browser.
