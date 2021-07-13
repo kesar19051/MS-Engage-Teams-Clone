@@ -32,3 +32,7 @@ I have used:
 - Extract it.
 - Run 'npm start' in the development mode.
 - Open http://localhost:3000 to view it in the browser.
+
+## Screenshots
+
+<img src = "Screenshots/MainPage.jpg" width = "350"/>
