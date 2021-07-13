@@ -14,7 +14,7 @@ Hence the features are:
 
 ## Demo
 
-You can find the video demo here. 
+You can find the video demo here https://www.youtube.com/watch?v=Gkl52hVGCks
 
 ## Technologies used
 
